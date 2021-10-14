@@ -25,20 +25,24 @@ public class Tile : MonoBehaviour
         GameObject.Find("gameManager").GetComponent<ManageCartas>().CartaSelecionada(gameObject);
         
     }
+    //carrega as cartas viradas para baixo
     public void EscondeCarta()
     {
         GetComponent<SpriteRenderer>().sprite = backCarta;
         tileRevelada = false;
     }
+    //carrega as cartas viradas para cima
     public void RevelaCarta()
     {
         GetComponent<SpriteRenderer>().sprite = originalCarta;
         tileRevelada = true;
     }
+    //coloca o sprite da parte de tras da carta na carta selecionada
     public void setCartaOriginal(Sprite novaCarta)
     {
         originalCarta = novaCarta;
     }
+    //coloca o sprite da parte da frente da carta na carta selecionada
     public void setCartaBack(Sprite novaCarta)
     {
         backCarta = novaCarta;

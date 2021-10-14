@@ -18,6 +18,7 @@ public class Rematch : MonoBehaviour
     }
     public void OpenMenu()
     {
+        //volta para o menu inicial do jogo
         SceneManager.LoadScene("Start");
     }
 }

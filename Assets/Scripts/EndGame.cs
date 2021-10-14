@@ -19,6 +19,7 @@ public class EndGame : MonoBehaviour
     //Abre a Cena com os creditos
     public void StartCredits()
     {
+        //Mostra os créditos do jogo, com o nome dos integrantes do grupo
         SceneManager.LoadScene("Credits");
     }
 }
